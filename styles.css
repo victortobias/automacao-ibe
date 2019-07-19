@@ -1,0 +1,239 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 4320px;
+	 height: 2432px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+.on{
+	box-shadow: 0 0 71px 20px rgb(255, 251, 0);
+}
+
+.lamp1 {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  float: left;
+  cursor: pointer;
+  
+}
+.hover {
+  box-shadow: 0 0 71px 20px rgb(0, 0, 0);
+}
+
+.lamp2 {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  float: left;
+  cursor: pointer;
+  
+}
+
+.lamp3 {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  float: left;
+  cursor: pointer;
+  
+}
+
+.lamp4 {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  float: left;
+  cursor: pointer;
+  
+}
+
+.lamp5 {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  float: left;
+  cursor: pointer;
+  
+}
+
+ #Grids 
+{ 
+	 left: 359px; 
+	 top: 282px; 
+	 position: absolute; 
+	 width: 3218px;
+	 height: 1718px;
+	 z-index:1;
+} 
+
+ #Setor5 
+{ 
+	 left: 692px; 
+	 top: 1198px; 
+	 position: absolute; 
+	 width: 2557px;
+	 height: 281px;
+	 z-index:2;
+} 
+
+ #Lamp5 
+{ 
+	 left: 723px; 
+	 top: 1211px; 
+	 position: absolute; 
+	 width: 2480px;
+	 height: 252px;
+	 z-index:3;
+} 
+
+ #Setor4 
+{ 
+	 left: 689px; 
+	 top: 737px; 
+	 position: absolute; 
+	 width: 2557px;
+	 height: 288px;
+	 z-index:4;
+} 
+
+ #Lamp4 
+{ 
+	 left: 723px; 
+	 top: 750px; 
+	 position: absolute; 
+	 width: 2485px;
+	 height: 266px;
+	 z-index:5;
+} 
+
+ #Setor33 
+{ 
+	 left: 3355px; 
+	 top: 731px; 
+	 position: absolute; 
+	 width: 114px;
+	 height: 749px;
+	 z-index:6;
+} 
+
+ #Lamp33 
+{ 
+	 left: 3387px; 
+	 top: 750px; 
+	 position: absolute; 
+	 width: 45px;
+	 height: 714px;
+	 z-index:7;
+} 
+
+ #Setor32 
+{ 
+	 left: 465px; 
+	 top: 750px; 
+	 position: absolute; 
+	 width: 116px;
+	 height: 758px;
+	 z-index:8;
+} 
+
+ #Lamp32 
+{ 
+	 left: 505px; 
+	 top: 757px; 
+	 position: absolute; 
+	 width: 45px;
+	 height: 728px;
+	 z-index:9;
+} 
+
+ #Setor31 
+{ 
+	 left: 698px; 
+	 top: 1655px; 
+	 position: absolute; 
+	 width: 2549px;
+	 height: 290px;
+	 z-index:10;
+} 
+
+ #Lamp31 
+{ 
+	 left: 733px; 
+	 top: 1667px; 
+	 position: absolute; 
+	 width: 2476px;
+	 height: 267px;
+	 z-index:11;
+} 
+
+ #Setor22 
+{ 
+	 left: 2219px; 
+	 top: 304px; 
+	 position: absolute; 
+	 width: 1335px;
+	 height: 299px;
+	 z-index:12;
+} 
+
+ #Setor21 
+{ 
+	 left: 384px; 
+	 top: 305px; 
+	 position: absolute; 
+	 width: 1328px;
+	 height: 270px;
+	 z-index:13;
+} 
+
+ #Lamp22 
+{ 
+	 left: 2271px; 
+	 top: 349px; 
+	 position: absolute; 
+	 width: 1159px;
+	 height: 206px;
+	 z-index:14;
+} 
+
+ #Lamp21 
+{ 
+	 left: 503px; 
+	 top: 350px; 
+	 position: absolute; 
+	 width: 1159px;
+	 height: 206px;
+	 z-index:15;
+} 
+
+ #Setor1 
+{ 
+	 left: 1798px; 
+	 top: 305px; 
+	 position: absolute; 
+	 width: 339px;
+	 height: 495px;
+	 z-index:16;
+} 
+
+ #Lamp1 
+{ 
+	 left: 1826px; 
+	 top: 346px; 
+	 position: absolute; 
+	 width: 287px;
+	 height: 441px;
+	 z-index:17;
+} 
