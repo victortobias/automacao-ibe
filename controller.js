@@ -23,6 +23,7 @@ var lamps = [0,0,0,0,0];
 var signal;
 $(".lamp, .lamp3, .lamp2").on('click', function(e, x){
 	id = $(this).attr('value');
+
 	if(lamps[id-1] == 0){
 		call = callEsp(id, 1)
 		if(call == false){
@@ -56,31 +57,32 @@ $(".lamp, .lamp3, .lamp2").on('click', function(e, x){
 })
 
 function callEsp(sector, signal){
-	/*  SIMULADOR DO ESP RESPONDENDO
+	/*  SIMULADOR DO ESP RESPONDENDO 
 	if(signal == 0){
 		return [true, 0];
 	}else{
 		return [true, 1];
 	}
 	*/
-
-	$.ajax({
-	  url : "IP DO ESP",
-	  type : 'GET',
-	  data : {
-	       signal: signal,
-	       sector: sector,
-	  },
-	})
-	.done(function(msg){
-		console.log(msg)
-	  response = [true, msg]
-	  return response;
-	})
-	.error(funtion(msg){
-
-	})
-	.fail(function(jqXHR, textStatus, msg){
-	  return false;
-	}); 
+	var command = 'SD'+sector+'='+signal;
+	var pw = 'apocalipse'
+	console.log(command);
+	$.ajax('http://192.168.9.165', 
+	{
+	    timeout: 500,
+	    method: 'POST',
+	    data: {
+	    	pw: pw,
+	    	command: command,
+	    },
+	    success: function (data,status,xhr) {   // success callback function
+	        console.log(msg)
+		  	response = [true, msg]
+		  	return response;
+	    },
+	    error: function (jqXhr, textStatus, errorMessage) { // error callback 
+	        return false;
+	    }
+	});
+	return true; 
 }
